@@ -1,0 +1,63 @@
+/* ROOT */
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --third-family: "Potta One", sans-serif;
+}
+/* root */
+
+
+
+/* COMMON CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,ol, ul,p,span{
+    margin: 0;
+}
+
+
+body{
+    font-family: var(--font-family);
+}
+
+
+/* NAV BAR MENU */
+#customMenu ul a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: #353535;
+    text-transform: uppercase;
+    padding: 18px 22px 5px;
+    position: relative;
+}
+
+#customMenu ul a::before{
+    content: "";
+    width: 0%;
+    height: 1%;
+    background-color: #353535;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform:0.5s;
+
+}
+#customMenu ul li:hover a::before{
+    width: 100%;
+}
+/* NAV BAR MENU */
